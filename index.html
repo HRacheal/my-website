@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">MyBrand</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="support.html">Buy Me Coffee</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Hi, I'm Your Name</h1>
+      <p>I write, I speak, I create value.</p>
+      <a href="#contact" class="btn-primary">Work With Me</a>
+    </section>
+
+    <!-- About Preview Section -->
+    <section>
+      <h2>About</h2>
+      <p>Welcome to my personal corner of the internet where I share my professional journey, reflections, and insights.</p>
+      <a href="about.html" class="btn-primary">Learn More</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="margin-top: 4rem;">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Event MC & Moderator</h3>
+          <p>Professional hosting and moderation for corporate and public events.</p>
+        </div>
+        <div class="card">
+          <h3>Public Speaking & Coaching</h3>
+          <p>Training and keynotes tailored to media engagement and communication.</p>
+        </div>
+        <div class="card">
+          <h3>Voice Over & Narration</h3>
+          <p>Creative voice delivery for media, narration, and podcasts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" style="margin-top: 4rem;">
+      <h2>Get In Touch</h2>
+      <!-- Replace YOUR_FORM_ENDPOINT with Formspree or Web3Forms URL -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+        <input type="text" name="name" placeholder="Name *" required>
+        <input type="email" name="email" placeholder="Email *" required>
+        <input type="text" name="organization" placeholder="Organization">
+        <textarea name="message" rows="5" placeholder="Message *" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
