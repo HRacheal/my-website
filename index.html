@@ -3,71 +3,288 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Hoziyana Rachel - Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #fdf5eb;
+      --primary-color: #6b1d2f;
+      --text-dark: #2c2c2c;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 8%;
+    }
+
+    .brand-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 5%;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 0.7rem 1.8rem;
+      border-radius: 20px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      align-items: center;
+      margin: 3rem 0;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .profile-frame {
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    .quote-banner {
+      background-color: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem 2rem;
+      font-style: italic;
+      margin-top: 3rem;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      background-color: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-form {
+      padding: 2.5rem;
+      background-color: var(--bg-color);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: none;
+      border-bottom: 1px solid var(--primary-color);
+      background: transparent;
+      outline: none;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .card h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html" class="logo">MyBrand</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="support.html">Buy Me Coffee</a></li>
-    </ul>
+    <a href="#" class="brand-logo">Hoziyana Rachel</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Hi, I'm Your Name</h1>
-      <p>I write, I speak, I create value.</p>
+      <h1>Hi, I'm Hoziyana Rachel</h1>
+      <p>I analyze, I write, I create value.</p>
       <a href="#contact" class="btn-primary">Work With Me</a>
     </section>
 
-    <!-- About Preview Section -->
-    <section>
-      <h2>About</h2>
-      <p>Welcome to my personal corner of the internet where I share my professional journey, reflections, and insights.</p>
-      <a href="about.html" class="btn-primary">Learn More</a>
+    <!-- About Section -->
+    <section id="about" class="grid-2">
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">About</h2>
+        <p>I am a passionate writer, data analyzer, and creator dedicated to crafting meaningful narratives and delivering data-driven insights. Whether structuring complex analysis, writing compelling stories, or engaging audiences, I focus on turning ideas into impactful outcomes.</p>
+      </div>
+      <div>
+        <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid profile-frame">
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" style="margin-top: 4rem;">
-      <h2>Services</h2>
-      <div class="services-grid">
+    <!-- Book Showcase Section -->
+    <section class="grid-2">
+      <div>
+        <img src="images/book.png" alt="Letters Between Hearts Cover" class="img-fluid" style="max-width: 240px; margin: 0 auto; display: block;">
+      </div>
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">"Letters Between Hearts"</h2>
+        <p>A original digital book published on GoodNovel detailing captivating stories and reflections, completing over 148K words with active online readership.</p>
+      </div>
+    </section>
+
+    <!-- What You'll Find Here Section -->
+    <section style="margin-top: 4rem;">
+      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">What You'll Find Here</h2>
+      <div class="grid-4">
         <div class="card">
-          <h3>Event MC & Moderator</h3>
-          <p>Professional hosting and moderation for corporate and public events.</p>
+          <h3>Articles</h3>
+          <p>Long-form reflections on data trends, policy, life, and professional insights written to inspire thoughtful conversation.</p>
         </div>
         <div class="card">
-          <h3>Public Speaking & Coaching</h3>
-          <p>Training and keynotes tailored to media engagement and communication.</p>
+          <h3>Spoken Word & Writing</h3>
+          <p>Creative expressions, poems, and excerpts where ideas and feelings take dynamic shape through words.</p>
         </div>
         <div class="card">
-          <h3>Voice Over & Narration</h3>
-          <p>Creative voice delivery for media, narration, and podcasts.</p>
+          <h3>Reviews: Books & Media</h3>
+          <p>Curated reviews and takeaways from influential books, films, and research that stir critical thinking.</p>
+        </div>
+        <div class="card">
+          <h3>Your Contributions</h3>
+          <p>A collaborative platform open to audience feedback, submissions, shared opinions, and discussions.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" style="margin-top: 4rem;">
-      <h2>Get In Touch</h2>
-      <!-- Replace YOUR_FORM_ENDPOINT with Formspree or Web3Forms URL -->
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
-        <input type="text" name="name" placeholder="Name *" required>
-        <input type="email" name="email" placeholder="Email *" required>
-        <input type="text" name="organization" placeholder="Organization">
-        <textarea name="message" rows="5" placeholder="Message *" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+    <!-- Services Section -->
+    <section id="services" style="margin-top: 4rem;">
+      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Services</h2>
+      <div class="grid-2">
+        <div>
+          <img src="images/desk.jpg" alt="Data Analysis and Writing" class="img-fluid">
+        </div>
+        <div>
+          <div class="card" style="margin-bottom: 1rem;">
+            <h3>Data Analysis & Value Creation</h3>
+            <p>Translating metrics and raw information into actionable business strategies and clear visualization.</p>
+          </div>
+          <div class="card">
+            <h3>Content & Book Writing</h3>
+            <p>Drafting engaging digital books, articles, reports, and creative manuscripts crafted for targeted audiences.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-  </footer>
+  <!-- Quote Banner -->
+  <div class="quote-banner">
+    <p>"Turning complex analysis and expressive storytelling into lasting real-world value."</p>
+  </div>
+
+  <!-- Contact & Submission Section -->
+  <section id="contact" class="container" style="padding-top: 0;">
+    <div class="contact-container">
+      <div>
+        <img src="images/profile2.jpg" alt="Hoziyana Rachel" class="img-fluid" style="height: 100%; object-fit: cover;">
+      </div>
+      <div class="contact-form">
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">For inquiries or article submissions, send me a message</h3>
+        <form>
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" required>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" required>
+          </div>
+          <div class="form-group">
+            <label>Organisation</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
