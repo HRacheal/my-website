@@ -100,13 +100,16 @@
       margin-top: 1.5rem;
     }
 
-    /* Displays images fully without cropping */
     .img-fluid {
       width: 100%;
       height: auto;
       border-radius: 8px;
-      object-fit: contain;
-      display: block;
+      object-fit: cover;
+    }
+
+    .profile-frame {
+      max-height: 450px;
+      object-fit: cover;
     }
 
     .card {
@@ -198,17 +201,16 @@
         <a href="about.html" class="btn-primary">Read Full Bio</a>
       </div>
       <div>
-        <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid">
+        <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid profile-frame">
       </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" style="margin-top: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.8rem;">Services</h2>
+      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Services</h2>
       <div class="grid-2">
         <div>
-          <!-- Full picture placed under Services without cropping -->
-          <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid">
+          <img src="images/desk.jpg" alt="Data Analysis and Writing" class="img-fluid">
         </div>
         <div>
           <div class="card" style="margin-bottom: 1.5rem;">
@@ -260,17 +262,14 @@
       </div>
     </section>
 
-    <!-- Ghostwriting & Book Showcase Section -->
-    <section style="margin-top: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.8rem;">Ghostwriting & Content Creation</h2>
-      <div class="grid-2">
-        <div>
-          <img src="images/book.png" alt="Letters Between Hearts Cover" class="img-fluid" style="max-width: 320px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-        </div>
-        <div>
-          <h3 style="color: var(--primary-color); margin-bottom: 0.8rem; font-size: 1.4rem;">"Letters Between Hearts"</h3>
-          <p>An original digital book published on GoodNovel detailing captivating stories and reflections, completing over 148K words with active online readership.</p>
-        </div>
+    <!-- Book Showcase Section -->
+    <section class="grid-2" style="margin-top: 4rem;">
+      <div>
+        <img src="images/book.png" alt="Letters Between Hearts Cover" class="img-fluid" style="max-width: 240px; margin: 0 auto; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      </div>
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">"Letters Between Hearts"</h2>
+        <p>A original digital book published on GoodNovel detailing captivating stories and reflections, completing over 148K words with active online readership.</p>
       </div>
     </section>
 
@@ -285,7 +284,7 @@
   <section id="contact" class="container" style="padding-top: 3rem;">
     <div class="contact-container">
       <div>
-        <img src="images/profile2.jpg" alt="Hoziyana Rachel" class="img-fluid">
+        <img src="images/profile2.jpg" alt="Hoziyana Rachel" class="img-fluid" style="height: 100%; object-fit: cover; max-height: 400px; width: 100%;">
       </div>
       <div class="contact-form">
         <h3 style="color: var(--primary-color); margin-bottom: 1rem;">For inquiries or article submissions, send me a message</h3>
