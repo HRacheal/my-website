@@ -3,33 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About Me - Hoziyana Rachel</title>
+  <style>
+    :root {
+      --bg-color: #fdf5eb;
+      --primary-color: #6b1d2f;
+      --text-dark: #2c2c2c;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 8%;
+    }
+
+    .brand-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 5%;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .about-img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .about-content h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      padding: 1.8rem;
+      background-color: var(--white);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .footer-note p {
+      margin-bottom: 0.8rem;
+      font-style: italic;
+    }
+
+    .footer-note p:last-child {
+      margin-bottom: 0;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+  </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html" class="logo">MyBrand</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="support.html">Buy Me Coffee</a></li>
-    </ul>
+    <a href="index.html" class="brand-logo">Hoziyana Rachel</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" style="color: var(--primary-color); font-weight: bold;">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
   </nav>
 
   <main class="container">
-    <h2>About Me</h2>
-    <div class="grid-2-col">
+    <div class="about-grid">
       <div>
-        <p>Write your detailed background story here. Introduce your professional journey, expertise, and personal values.</p>
-        <p>Share what drives your passion and what projects you are actively looking to collaborate on.</p>
+        <img src="images/profile3.jpg" alt="Hoziyana Rachel" class="about-img">
+      </div>
+      <div class="about-content">
+        <h1>About Me</h1>
+        
+        <p><strong>Hoziyana Rachel</strong> is a Data Scientist, Data Analyst, Ghostwriter, and Virtual Assistant who is constantly building herself, learning every day, and finding purpose at the intersection of data intelligence and effective support. Her work bridges analytical insight with practical execution—whether she is building interactive dashboards, analyzing diagnostic and financial trends, identifying patterns, or developing predictive models that support better decision-making.</p>
+
+        <p>Beyond her technical work, Rachel is a proud Rotarian and a Transformative Leader committed to service and community impact. As the Co-Founder & Partnership Coordinator of Rwanda Rice Revival, she actively works to foster meaningful collaborations and drive sustainable growth. She also lends her precision and attention to detail to work as a Transcriptionist and ghostwriter, crafting clear, compelling narratives behind the scenes.</p>
+
+        <p>This blog is for people who are still becoming. For those building careers while figuring out life. For the dreamers who sometimes doubt themselves. For the women trying to become more without losing who they already are. For the ones who love deeply, dream loudly, start again, and keep going even when the road looks uncertain.</p>
+
+        <div class="footer-note">
+          <p>It is a space for stories, lessons, questions, failures, little victories, and everything in between.</p>
+          <p>A space where data meets curiosity, technology meets possibility, and life gets to be messy, beautiful, and real.</p>
+          <p>Welcome to my little corner of the internet.</p>
+        </div>
       </div>
     </div>
   </main>
-
-  <footer>
-    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
