@@ -100,8 +100,8 @@
       margin-top: 1.5rem;
     }
 
-    /* Keeps image completely uncropped and full size */
-    .img-full {
+    /* Displays images fully without cropping */
+    .img-fluid {
       width: 100%;
       height: auto;
       border-radius: 8px;
@@ -189,13 +189,26 @@
       <a href="#contact" class="btn-primary">Work With Me</a>
     </section>
 
+    <!-- Brief Overview Section -->
+    <section id="about" class="grid-2">
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Welcome to My Workspace</h2>
+        <p>I am a Data Scientist and Data Analyst, writer, and strategist committed to transforming raw information into actionable business intelligence and crafting compelling narratives that resonate.</p>
+        <br>
+        <a href="about.html" class="btn-primary">Read Full Bio</a>
+      </div>
+      <div>
+        <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid">
+      </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" style="margin-top: 3rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 2rem;">Services</h2>
+    <section id="services" style="margin-top: 4rem;">
+      <h2 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.8rem;">Services</h2>
       <div class="grid-2">
         <div>
-          <!-- Uncropped full picture -->
-          <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-full">
+          <!-- Full picture placed under Services without cropping -->
+          <img src="images/profile1.jpg" alt="Hoziyana Rachel" class="img-fluid">
         </div>
         <div>
           <div class="card" style="margin-bottom: 1.5rem;">
@@ -212,7 +225,7 @@
 
     <!-- What You'll Find Here Section -->
     <section style="margin-top: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.8rem;">What You'll Find Here</h2>
+      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">What You'll Find Here</h2>
       <div class="grid-4">
         <div class="card">
           <h3>Articles</h3>
@@ -235,14 +248,14 @@
 
     <!-- Data Dashboards Showcase Section -->
     <section style="margin-top: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.8rem;">Data Analytics & Financial Intelligence</h2>
+      <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">Data Analytics & Financial Intelligence</h2>
       <p style="margin-bottom: 1.5rem;">Interactive dashboards built to uncover diagnostic insights, clinical performance, and revenue trends.</p>
       <div class="grid-2">
         <div>
-          <img src="images/chart1.png" alt="Diagnostic Breakdown & Financial Intelligence Dashboard" class="img-full" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+          <img src="images/chart1.png" alt="Diagnostic Breakdown & Financial Intelligence Dashboard" class="img-fluid" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
         </div>
         <div>
-          <img src="images/chart2.png" alt="Clinical Performance & Patient Demographics Dashboard" class="img-full" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+          <img src="images/chart2.png" alt="Clinical Performance & Patient Demographics Dashboard" class="img-fluid" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
         </div>
       </div>
     </section>
@@ -252,10 +265,10 @@
       <h2 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.8rem;">Ghostwriting & Content Creation</h2>
       <div class="grid-2">
         <div>
-          <img src="images/book.png" alt="Letters Between Hearts Cover" class="img-full" style="max-width: 350px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+          <img src="images/book.png" alt="Letters Between Hearts Cover" class="img-fluid" style="max-width: 320px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
         </div>
         <div>
-          <h3 style="color: var(--primary-color); margin-bottom: 0.8rem; font-size: 1.5rem;">"Letters Between Hearts"</h3>
+          <h3 style="color: var(--primary-color); margin-bottom: 0.8rem; font-size: 1.4rem;">"Letters Between Hearts"</h3>
           <p>An original digital book published on GoodNovel detailing captivating stories and reflections, completing over 148K words with active online readership.</p>
         </div>
       </div>
@@ -268,11 +281,11 @@
     <p>"Turning complex analysis and expressive storytelling into lasting real-world value."</p>
   </div>
 
-  <!-- Contact Section -->
+  <!-- Contact & Submission Section -->
   <section id="contact" class="container" style="padding-top: 3rem;">
     <div class="contact-container">
       <div>
-        <img src="images/profile2.jpg" alt="Hoziyana Rachel" class="img-full">
+        <img src="images/profile2.jpg" alt="Hoziyana Rachel" class="img-fluid">
       </div>
       <div class="contact-form">
         <h3 style="color: var(--primary-color); margin-bottom: 1rem;">For inquiries or article submissions, send me a message</h3>
